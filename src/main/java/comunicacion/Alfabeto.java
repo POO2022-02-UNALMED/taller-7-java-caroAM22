@@ -17,11 +17,12 @@ public class Alfabeto extends Pictograma{
 		return interpretacion;
 	}
 	public String toString() {
-		String alf=null;
-		for(int i=0;i<letras.length; i++)
+		String alf="";
+		for(int i=0;i<letras.length-1; i++)
 		{
 		    alf+=letras[i]+", ";
 	    }
+		alf+=letras[letras.length-1];
 		return alf;
 	}
 
